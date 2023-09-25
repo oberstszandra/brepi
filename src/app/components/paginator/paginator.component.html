@@ -1,0 +1,23 @@
+<section class="paginator-wrapper">
+  <ul class="paginator-list">
+    <li>
+      <button class="paginator-button" (click)="handlePreviousPageClick()">
+        &larr;
+      </button>
+    </li>
+    <li *ngFor="let pageNumber of pageNumbers">
+      <button
+        class="paginator-button"
+        [ngClass]="{ selected: pageNumber === currentPage }"
+        (click)="handlePageNumberClick(pageNumber)"
+      >
+        {{ pageNumber }}
+      </button>
+    </li>
+    <li>
+      <button class="paginator-button" (click)="handleNextPageClick()">
+        &rarr;
+      </button>
+    </li>
+  </ul>
+</section>

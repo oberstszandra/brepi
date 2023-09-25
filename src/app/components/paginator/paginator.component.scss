@@ -1,0 +1,33 @@
+.paginator-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginator-list {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.paginator-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  color: skyblue;
+  background-color: white;
+  border: 1px solid gray;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  background-color: skyblue;
+  color: white;
+}

@@ -1,0 +1,10 @@
+<li class="listing" (click)="handleCardClick(brepiCard.id)">
+  <img
+    *ngIf="!showDescription"
+    class="listing-photo"
+    [src]="brepiCard.image_url"
+    alt="Exterior photo of {{ brepiCard.name }}"
+  />
+  <p *ngIf="showDescription" class="listing-heading">{{ brepiCard.description }}</p>
+  <h2 class="listing-name" [title]="brepiCard.name">{{ brepiCard.name }}</h2>
+</li>
